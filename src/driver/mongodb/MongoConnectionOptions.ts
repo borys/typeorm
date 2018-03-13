@@ -154,6 +154,11 @@ export interface MongoConnectionOptions extends BaseConnectionOptions {
     readonly authSource?: string;
 
     /**
+     * Mechanism for authentication: MDEFAULT, GSSAPI, PLAIN, MONGODB-X509, SCRAM-SHA-1 or MONGODB-CR
+     */
+    readonly authMechanism?: "MDEFAULT" | "GSSAPI" | "PLAIN" | "MONGODB-X509" | "SCRAM-SHA-1" | "MONGODB-CR";
+
+    /**
      * The write concern.
      */
     readonly w?: string|number;

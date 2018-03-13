@@ -143,6 +143,7 @@ export class MongoDriver implements Driver {
                 secondaryAcceptableLatencyMS: this.options.secondaryAcceptableLatencyMS,
                 connectWithNoPrimary: this.options.connectWithNoPrimary,
                 authSource: this.options.authSource,
+                authMechanism: this.options.authMechanism,
                 w: this.options.w,
                 wtimeout: this.options.wtimeout,
                 j: this.options.j,
